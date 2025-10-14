@@ -63,18 +63,19 @@
           format("truetype");
       }
 
-      input[type="text"],
       input[type="email"],
       input[type="password"] {
         width: 100%;
         padding: 10px;
         border-radius: 8px;
         border: 1px solid #eaeaea !important;
-        margin-bottom: 1rem;
         outline: 0;
       }
 
-      input[type="text"]::placeholder,
+      input[type="email"] {
+        margin-bottom: 1rem;
+      }
+
       input[type="email"]::placeholder,
       input[type="password"]::placeholder {
         color: #cacaca;
@@ -85,7 +86,7 @@
         display: none !important;
       }
       #api {
-        width: 60% !important;
+        width: 100% !important;
       }
       .entry-item label {
         display: none !important;
@@ -95,7 +96,7 @@
         text-decoration: none;
         position: relative;
         top: 85px;
-        left: 71%;
+        left: 69%;
       }
 
       .create {
@@ -143,7 +144,7 @@
       <section>
         <div>
           <h1 role="heading" style="font-weight: 600">
-            Log in to your accountLog in to your account
+            Log in to your account
           </h1>
 
           <p aria-level="1" style="color: #242456; font-size: 14px">
