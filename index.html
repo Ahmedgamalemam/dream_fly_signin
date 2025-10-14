@@ -17,7 +17,7 @@
         height: 100vh;
       }
 
-      section {
+      main {
         background: #ffffff;
         display: flex;
         flex-direction: row;
@@ -28,6 +28,13 @@
         height: 90%;
         border-radius: 20px;
         padding: 14px 28px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
       }
 
       .background-logo {
@@ -128,43 +135,44 @@
   </head>
 
   <body>
-    <section>
-      <div class="heading">
-        <h1 role="heading" style="font-weight: 600">
-          Log in to your accountLog in to your account
-        </h1>
-      </div>
+    <main>
+      <section>
+        <div>
+          <h1 role="heading" style="font-weight: 600">
+            Log in to your accountLog in to your account
+          </h1>
 
-      <div class="intro">
-        <h2 aria-level="1" style="color: #242456; font-size: 14px">
-          Welcome back! Log in using your email address
-        </h2>
-      </div>
-      <form id="api" method="post" autocomplete="off">
-        <input
-          id="email"
-          name="Email Address"
-          type="text"
-          placeholder="Email Address"
-          required
-        />
+          <p aria-level="1" style="color: #242456; font-size: 14px">
+            Welcome back! Log in using your email address
+          </p>
+        </div>
+        <form id="api" method="post" autocomplete="off">
+          <input
+            id="email"
+            name="Email Address"
+            type="text"
+            placeholder="Email Address"
+            required
+          />
 
-        <input
-          id="password"
-          name="password"
-          type="password"
-          placeholder="Password"
-          required
-        />
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
 
-        <button id="next" type="submit" form="localAccountForm">Login</button>
-      </form>
+          <button id="next" type="submit" form="localAccountForm">Login</button>
+        </form>
+      </section>
+
       <div class="background-logo">
         <img
           src="https://ahmedgamalemam.github.io/dream_fly_signin//images/light-bg.png"
           alt="logo"
         />
       </div>
-    </section>
+    </main>
   </body>
 </html>
