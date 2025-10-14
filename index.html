@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dream & Fly</title>
+
+    <style>
+      body {
+        font-family: Nunito !important;
+        overflow-x: hidden;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      section {
+        background: #ffffff;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 90%;
+        border-radius: 20px;
+        padding: 14px 28px;
+      }
+
+      .background-logo {
+        width: 50%;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      form {
+        width: 50%;
+      }
+
+      @font-face {
+        font-family: "Nunito";
+        src: url("https://ahmedgamalemam.github.io/b2c-login-page/fonts/NunitoSans_7pt_Condensed-Regular.ttf")
+          format("truetype");
+      }
+
+      @font-face {
+        font-family: "Urbanist";
+        src: url("https://ahmedgamalemam.github.io/b2c-login-page/fonts/Urbanist-Black.ttf")
+          format("truetype");
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #eaeaea !important;
+        margin-bottom: 1rem;
+        outline: 0;
+      }
+
+      input[type="text"]::placeholder,
+      input[type="email"]::placeholder,
+      input[type="password"]::placeholder {
+        color: #cacaca;
+      }
+
+      .entry-item label {
+        display: none !important;
+      }
+      #forgotPassword {
+        color: #86c3f1;
+        text-decoration: none;
+      }
+
+      .create {
+        padding: 12px 0;
+      }
+      .create p {
+        text-align: center;
+        color: #6b7280;
+      }
+
+      .create #createAccount {
+        color: #369be7;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      #next {
+        width: 100%;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        background: #369be7;
+        color: white;
+        border: none;
+      }
+
+      /* /////////////////////////////////////////////////////// */
+
+      @media (max-width: 1000px) {
+        .main-login > div {
+          width: 100%;
+          height: 100dvh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          border-radius: 0 !important;
+        }
+
+        .main-login > section {
+          width: 70% !important;
+          margin: 0 auto;
+          z-index: 2;
+          opacity: 97%;
+        }
+
+        section:has(form) > img {
+          width: 150px !important;
+        }
+        section:has(form) > div {
+          h3 {
+            font-size: 1.5rem !important;
+          }
+
+          p {
+            font-size: 0.8rem !important;
+          }
+        }
+
+        .bg.bg1 {
+          background-position: bottom;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .main-login {
+          padding: 0rem 3% 0;
+        }
+
+        .main-login > div {
+          display: none !important;
+        }
+
+        .main-login > section {
+          width: 100% !important;
+        }
+      }
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section>
+      <form id="api" method="post" autocomplete="off">
+        <h2 style="font-weight: 600">Log in to your account.</h2>
+        <p style="color: #242456">
+          Welcome back! Log in using your email address
+        </p>
+
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="Email Address"
+          required
+        />
+
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+
+        <div class="forgot-password">
+          <a id="forgotPassword">Forgot password?</a>
+        </div>
+
+        <button
+          id="next"
+          type="submit"
+          class="w-100 back-blue-middle color-white p-2 rounded-3"
+        >
+          Login
+        </button>
+      </form>
+      <div class="background-logo">
+        <img src="images/light-bg.png" alt="logo" />
+      </div>
+    </section>
+  </body>
+</html>
