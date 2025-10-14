@@ -168,14 +168,21 @@
   <body>
     <section>
       <form id="api" method="post" autocomplete="off">
-        <h2 style="font-weight: 600">Log in to your account.</h2>
-        <p style="color: #242456">
-          Welcome back! Log in using your email address
-        </p>
+        <div class="heading">
+          <h1 role="heading" style="font-weight: 600">
+            Log in to your accountLog in to your account
+          </h1>
+        </div>
+
+        <div class="intro">
+          <h2 aria-level="1" style="color: #242456; font-size: 14px">
+            Welcome back! Log in using your email address
+          </h2>
+        </div>
 
         <input
-          id="username"
-          name="username"
+          id="emaik"
+          name="Email Address"
           type="text"
           placeholder="Email Address"
           required
@@ -189,10 +196,6 @@
           required
         />
 
-        <div class="forgot-password">
-          <a id="forgotPassword">Forgot password?</a>
-        </div>
-
         <button
           id="next"
           type="submit"
@@ -202,7 +205,10 @@
         </button>
       </form>
       <div class="background-logo">
-        <img src="images/light-bg.png" alt="logo" />
+        <img
+          src="https://ahmedgamalemam.github.io/dream_fly_signin//images/light-bg.png"
+          alt="logo"
+        />
       </div>
     </section>
   </body>
