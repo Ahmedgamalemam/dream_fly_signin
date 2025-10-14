@@ -98,7 +98,8 @@
 
       #next {
         width: 100%;
-        padding: 0.2rem;
+        padding: 0.5rem;
+        margin-top: 14px;
         border-radius: 0.5rem;
         background: #369be7;
         color: white;
@@ -106,55 +107,6 @@
       }
 
       /* /////////////////////////////////////////////////////// */
-
-      @media (max-width: 1000px) {
-        .main-login > div {
-          width: 100%;
-          height: 100dvh;
-          position: fixed;
-          top: 0;
-          left: 0;
-          border-radius: 0 !important;
-        }
-
-        .main-login > section {
-          width: 70% !important;
-          margin: 0 auto;
-          z-index: 2;
-          opacity: 97%;
-        }
-
-        section:has(form) > img {
-          width: 150px !important;
-        }
-        section:has(form) > div {
-          h3 {
-            font-size: 1.5rem !important;
-          }
-
-          p {
-            font-size: 0.8rem !important;
-          }
-        }
-
-        .bg.bg1 {
-          background-position: bottom;
-        }
-      }
-
-      @media (max-width: 500px) {
-        .main-login {
-          padding: 0rem 3% 0;
-        }
-
-        .main-login > div {
-          display: none !important;
-        }
-
-        .main-login > section {
-          width: 100% !important;
-        }
-      }
     </style>
 
     <link
@@ -196,7 +148,7 @@
           required
         />
 
-        <button id="next" type="submit">Login</button>
+        <button id="next" type="submit" form="localAccountForm">Login</button>
       </form>
       <div class="background-logo">
         <img
