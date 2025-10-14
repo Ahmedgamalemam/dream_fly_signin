@@ -40,8 +40,8 @@
         height: 100%;
       }
 
-      form {
-        width: 100%;
+      #localAccountForm {
+        width: 100% !important;
       }
 
       @font-face {
@@ -181,7 +181,7 @@
         </div>
 
         <input
-          id="emaik"
+          id="email"
           name="Email Address"
           type="text"
           placeholder="Email Address"
@@ -196,13 +196,7 @@
           required
         />
 
-        <button
-          id="next"
-          type="submit"
-          class="w-100 back-blue-middle color-white p-2 rounded-3"
-        >
-          Login
-        </button>
+        <button id="next" type="submit">Login</button>
       </form>
       <div class="background-logo">
         <img
